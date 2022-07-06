@@ -1,8 +1,8 @@
 # Graph explorer setup
 
-Follow these steps to configure an Azure AD user with the proper permissions to manage custom security attributes in Azure AD and configure the attribute catalog using Graph Explorer.
+Follow these steps to configure an Azure Active Directory user with the proper permissions to manage custom security attributes in Azure AD and configure the attribute catalog using Graph Explorer.
 
-1. Make sure that the Azure AD User that you are using has 
+1. Make sure that the user has the following role assignments
     * [Attribute Definition Administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#attribute-definition-administrator) role if you are going to configure the attribute catalog. 
     * [Attribute Assignment Administrator](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference#attribute-assignment-administrator) if you are going to assign attribute values to users. 
     * You can confirm that this is working by opening the [Custom Security Attributes](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/CustomAttributesCatalog) pane in Azure Active Directory. If the options are greyed out of the blade does not load, you do not have proper permissions setup. In this example, there is an existing attribute set visible. ![Custom Security Attributes in Azure portal](/attrbutesets-portal.png)
